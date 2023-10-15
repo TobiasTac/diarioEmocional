@@ -1,0 +1,193 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 92px);
+  height: auto;
+}
+.route {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100vw;
+}
+.items {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  color: var(--text-color);
+}
+.items a {
+  color: var(--text-color);
+  margin: 10px;
+}
+.items a:hover {
+  color: var(--hover-color-purple);
+  margin: 10px;
+  transition: var(--tran-02);
+}
+.route .text.sub {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-position: under;
+  padding-bottom: 2px;
+}
+
+.func {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.seacreate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 390px;
+  border: 2px solid var(--purple);
+  padding: 8px;
+  border-radius: 30px; 
+  margin-left: 30px;
+}
+input[type="text"]{
+  background: transparent;
+  border: 0px;
+  outline: 0px;
+  width: 310px;
+  color: var(--black);
+}
+.seacreate .icon-search{
+  color: var(--purple);
+  font-size: 15px;
+}
+
+.seacreate .icon-search.filter{
+  margin-right: 10px;
+  font-size: 20px;
+}
+.seacreate .icon-search.filter:hover{
+  color: var(--hover-color-purple);
+}
+
+.createDiario{
+  margin-right: 60px;
+}
+
+.button{
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--purple);
+  cursor: pointer;
+  transition: var(--tran-02);
+  color: var(--body-color);
+  width: 180px;
+  height: 50px;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.button:hover{
+  background-color: var(--hover-color-purple);
+  color: var(--black);
+}
+
+.cont-card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 92px);
+  flex-wrap: wrap;
+}
+.cont-card .card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  margin: 20px;
+  background: var(--purple);
+  border-radius: 20px;
+
+}
+.cont-card .card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid var(--purple1) ; 
+  border-left: 20px solid var(--purple1) ; 
+}
+.cont-card .card .icon{
+  margin-bottom: 10px;
+}
+.cont-card .card .icon img{
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+.cont-card .card .content{
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+}
+.cont-card .card .content::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent, var(--purple))
+}
+.cont-card .card .content h3{
+  color: var(--white);
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.cont-card .card .content h1{
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.cont-card .card .content p{
+    font-weight: 300;
+    color: var(--white);
+}
+.cont-card .card .bt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+.cont-card .card .button.read{
+  background: var(--white);
+  color: var(--purple);
+  width: 100%;
+  margin-bottom: 7px;
+  font-weight: bold;
+  letter-spacing: .1em
+}
+.cont-card .card .button.read:hover{
+  background-color: var(--hover-color-purple);
+  color: var(--white);
+}
+.cont-card .card .button.delete{
+  background: var(--color-red);
+  color: var(--white);
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  letter-spacing: .1em
+
+}
+.cont-card .card .button.delete:hover{
+  background-color: var(--hover-color-red);
+  color: var(--purple);
+}
