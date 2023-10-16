@@ -1,6 +1,6 @@
 /* create */
 
-.modalCreate{
+.modalCreate {
   background-color: #0009;
   position: fixed;
   left: 0;
@@ -10,25 +10,42 @@
   display: none;
   justify-content: center;
   align-items: center;
-  animation:fade .4s cubic-bezier(.25,.46,.45,.94) both
+  animation: fade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes fade{0%{opacity:0}100%{opacity:1}}
-@keyframes slide-in-fwd-center{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
-.modalCreate-container{
+.modalCreate-container {
   background-color: var(--sidebar-color);
   width: 60%;
   padding: 20px;
   border-radius: 5px;
-  animation:slide-in-fwd-center .4s .3s cubic-bezier(.25,.46,.45,.94) both
+  animation: slide-in-fwd-center 0.4s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }
 
 .modalCreate-header {
   display: flex;
   justify-content: space-between;
 }
-.modalCreate-header h2{
+.modalCreate-header h2 {
   color: var(--text-color);
 }
 .modalCreate-header button {
@@ -42,7 +59,7 @@
   color: var(--hover-color-red);
 }
 
-.modalCreate-header .bx{
+.modalCreate-header .bx {
   scale: 1.5;
 }
 
@@ -50,7 +67,7 @@
   margin: 30px auto;
 }
 
-.modalCreate-content h1{
+.modalCreate-content h1 {
   color: var(--text-color);
   font-weight: 200px;
   font-size: 14px;
@@ -69,7 +86,7 @@
   outline: none;
   color: var(--black);
 }
-.modalCreate-content input[type=text] {
+.modalCreate-content input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -82,11 +99,11 @@
 
 .modalCreate-footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
 }
 
-.modalCreate-footer button{
+.modalCreate-footer button {
   border: none;
   color: #fff;
   background-color: var(--color-purple);
@@ -95,34 +112,22 @@
   width: 100px;
 }
 
-.modalCreate-footer button:nth-child(1){
-  margin-bottom: 7px;
+.modalCreate-footer button:nth-child(1) {
+  margin-bottom: 0;
+  margin-right: 7px;;
 }
 
-.modalCreate-footer button:nth-child(2){
+.modalCreate-footer button:nth-child(2) {
   background-color: var(--color-red);
 }
-.modalCreate-footer button:hover:nth-child(2){
+.modalCreate-footer button:hover:nth-child(2) {
   background-color: var(--hover-color-red);
 }
-
-@media (min-width: 768px) {
-  .modalCreate-footer {
-    flex-direction: row;
-  }
-  .modalCreate-footer button:nth-child(1){
-    margin-bottom: 0;
-    margin-right: 7px;
-  }
-}
-
-
 
 
 /* read more */
 
-
-.modalRead{
+.modalRead {
   background-color: #0009;
   position: fixed;
   left: 0;
@@ -132,25 +137,42 @@
   display: none;
   justify-content: center;
   align-items: center;
-  animation:fade .4s cubic-bezier(.25,.46,.45,.94) both
+  animation: fade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes fade{0%{opacity:0}100%{opacity:1}}
-@keyframes slide-in-fwd-center{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
-.modalRead-container{
+.modalRead-container {
   background-color: var(--sidebar-color);
   width: 60%;
   padding: 20px;
   border-radius: 5px;
-  animation:slide-in-fwd-center .4s .3s cubic-bezier(.25,.46,.45,.94) both
+  animation: slide-in-fwd-center 0.4s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }
 
 .modalRead-header {
   display: flex;
   justify-content: space-between;
 }
-.modalRead-header h2{
+.modalRead-header h2 {
   color: var(--text-color);
   font-size: 13px;
 }
@@ -166,7 +188,7 @@
   color: var(--hover-color-red);
 }
 
-.modalRead-header .bx{
+.modalRead-header .bx {
   scale: 1.5;
 }
 
@@ -174,7 +196,7 @@
   margin: 30px auto;
 }
 
-.modalRead-content h1{
+.modalRead-content h1 {
   color: var(--text-color);
   font-weight: 200px;
   font-size: 14px;
@@ -193,7 +215,7 @@
   outline: none;
   color: var(--black);
 }
-.modalRead-content input[type=text] {
+.modalRead-content input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -206,11 +228,11 @@
 
 .modalRead-footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
 }
 
-.modalRead-footer button{
+.modalRead-footer button {
   border: none;
   color: #fff;
   background-color: var(--color-purple);
@@ -219,31 +241,21 @@
   width: 100px;
 }
 
-.modalRead-footer button:nth-child(1){
-  margin-bottom: 7px;
+.modalRead-footer button:nth-child(1) {
+  margin-bottom: 0;
+  margin-right: 7px;
 }
 
-.modalRead-footer button:nth-child(2){
+.modalRead-footer button:nth-child(2) {
   background-color: var(--color-red);
 }
-.modalRead-footer button:hover:nth-child(2){
+.modalRead-footer button:hover:nth-child(2) {
   background-color: var(--hover-color-red);
-}
-
-@media (min-width: 768px) {
-  .modalRead-footer {
-    flex-direction: row;
-  }
-  .modalRead-footer button:nth-child(1){
-    margin-bottom: 0;
-    margin-right: 7px;
-  }
 }
 
 /* filter */
 
-
-.modalFilter{
+.modalFilter {
   background-color: #0009;
   position: fixed;
   left: 0;
@@ -253,26 +265,43 @@
   display: none;
   justify-content: center;
   align-items: center;
-  animation:fade .4s cubic-bezier(.25,.46,.45,.94) both
+  animation: fade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes fade{0%{opacity:0}100%{opacity:1}}
-@keyframes slide-in-fwd-center{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
-.modalFilter-container{
+.modalFilter-container {
   background-color: var(--sidebar-color);
   width: 40%;
   padding: 20px;
   border-radius: 5px;
   align-items: center;
-  animation:slide-in-fwd-center .4s .3s cubic-bezier(.25,.46,.45,.94) both;
+  animation: slide-in-fwd-center 0.4s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }
 
 .modalFilter-header {
   display: flex;
   justify-content: space-between;
 }
-.modalFilter-header h2{
+.modalFilter-header h2 {
   color: var(--text-color);
 }
 
@@ -287,7 +316,7 @@
   color: var(--hover-color-red);
 }
 
-.modalFilter-header .bx{
+.modalFilter-header .bx {
   scale: 1.5;
 }
 
@@ -296,23 +325,23 @@
   text-align: center;
 }
 
-.modalFilter-content label{
+.modalFilter-content label {
   color: var(--text-color);
   font-weight: 200px;
   font-size: 18px;
 }
-.modalFilter-content input{
+.modalFilter-content input {
   margin-bottom: 20px;
   cursor: pointer;
 }
 
 .modalFilter-footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
 }
 
-.modalFilter-footer button{
+.modalFilter-footer button {
   border: none;
   color: #fff;
   background-color: var(--color-purple);
@@ -321,32 +350,21 @@
   width: 100px;
 }
 
-.modalFilter-footer button:nth-child(1){
-  margin-bottom: 7px;
+.modalFilter-footer button:nth-child(1) {
+  margin-bottom: 0;
+  margin-right: 7px;
 }
 
-.modalFilter-footer button:nth-child(2){
+.modalFilter-footer button:nth-child(2) {
   background-color: var(--color-red);
 }
-.modalFilter-footer button:hover:nth-child(2){
+.modalFilter-footer button:hover:nth-child(2) {
   background-color: var(--hover-color-red);
 }
 
-@media (min-width: 768px) {
-  .modalFilter-footer {
-    flex-direction: row;
-  }
-  .modalFilter-footer button:nth-child(1){
-    margin-bottom: 0;
-    margin-right: 7px;
-  }
-}
-
-
 /* delete */
 
-
-.modalDelete{
+.modalDelete {
   background-color: #0009;
   position: fixed;
   left: 0;
@@ -356,19 +374,36 @@
   display: none;
   justify-content: center;
   align-items: center;
-  animation:fade .4s cubic-bezier(.25,.46,.45,.94) both
+  animation: fade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes fade{0%{opacity:0}100%{opacity:1}}
-@keyframes slide-in-fwd-center{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
-.modalDelete-container{
+.modalDelete-container {
   background-color: var(--sidebar-color);
   width: 30%;
   padding: 20px;
   border-radius: 5px;
   align-items: center;
-  animation:slide-in-fwd-center .4s .3s cubic-bezier(.25,.46,.45,.94) both;
+  animation: slide-in-fwd-center 0.4s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }
 
 .modalDelete-header {
@@ -386,7 +421,7 @@
   color: var(--hover-color-red);
 }
 
-.modalDelete-header .bx{
+.modalDelete-header .bx {
   scale: 1.5;
 }
 
@@ -395,7 +430,7 @@
   text-align: center;
 }
 
-.modalDelete-content h1{
+.modalDelete-content h1 {
   color: var(--text-color);
   font-size: 18px;
 }
@@ -407,7 +442,7 @@
   align-items: center;
 }
 
-.modalDelete-footer button{
+.modalDelete-footer button {
   border: none;
   color: #fff;
   background-color: var(--color-purple);
@@ -416,10 +451,45 @@
   width: 100px;
 }
 
-.modalDelete-footer button:nth-child(1){
+.modalDelete-footer button:nth-child(1) {
   background-color: var(--color-red);
   margin-top: 20px;
 }
-.modalDelete-footer button:hover:nth-child(1){
+.modalDelete-footer button:hover:nth-child(1) {
   background-color: var(--hover-color-red);
+}
+
+@media screen and (max-width: 768px) {
+  .modalCreate-container {
+    background-color: var(--sidebar-color);
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    animation: slide-in-fwd-center 0.4s 0.3s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .modalRead-container {
+    background-color: var(--sidebar-color);
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    animation: slide-in-fwd-center 0.4s 0.3s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .modalFilter-container {
+    background-color: var(--sidebar-color);
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    animation: slide-in-fwd-center 0.4s 0.3s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .modalDelete-container {
+    background-color: var(--sidebar-color);
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    animation: slide-in-fwd-center 0.4s 0.3s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
 }

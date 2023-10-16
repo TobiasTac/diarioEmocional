@@ -167,3 +167,15 @@ hr {
   width: calc(100% - 20px);
   opacity: 0.3;
 }
+
+@media screen and (max-width: 768px) {
+  
+  .sidebar.active{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+  }
+
+}

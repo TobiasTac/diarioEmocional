@@ -8,7 +8,7 @@ require "vendor/autoload.php";
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SideBar</title>
+  <title>Swift Planner - Diário Emocional</title>
 
   <link rel="stylesheet" href="assets/style.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -225,7 +225,7 @@ require "vendor/autoload.php";
 
   <section class="overlay"></section>
 
-  <div> <?php include('test.php '); ?> </div>
+  <div> <?php include('diarioEmocional.php '); ?> </div>
   <div> <?php include('modal.php '); ?> </div>
 
 </body>
