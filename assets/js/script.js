@@ -89,8 +89,8 @@ closeReadModal.addEventListener("click", () => {
 // delete
 
 const openDeleteModal = document.querySelectorAll(".delete"),
-  closeDeleteModal = document.querySelector(".modalCloseDelete"),
-  deleteModal = document.querySelector(".container-modalDelete");
+  closeDeleteModal = document.querySelector(".modalDeleteClose"),
+  deleteModal = document.querySelector(".modalDelete");
 
 openDeleteModal.forEach((deleteOpen) => {
   deleteOpen.addEventListener("click", () => {
@@ -104,14 +104,12 @@ closeDeleteModal.addEventListener("click", () => {
 
 // filter
 
-const openFilterModal = document.querySelectorAll(".filter"),
-  closeFilterModal = document.querySelector(".modalCloseFilter"),
-  filterModal = document.querySelector(".container-modalFilter");
+const openFilterModal = document.querySelector(".filter"),
+  closeFilterModal = document.querySelector(".modalFilterClose"),
+  filterModal = document.querySelector(".modalFilter");
 
-openFilterModal.forEach((filterOpen) => {
-  filterOpen.addEventListener("click", () => {
-    filterModal.style.display = "flex";
-  });
+openFilterModal.addEventListener("click", () => {
+  filterModal.style.display = "flex";
 });
 
 closeFilterModal.addEventListener("click", () => {
